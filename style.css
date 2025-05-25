@@ -1,0 +1,651 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  overflow-x: hidden;
+}
+.navbar {
+  position: fixed;
+  display: block;
+  top: 0;
+  left: 0;
+  font-family: "Roboto", sans-serif;
+  background-color: rgb(255, 255, 255);
+  width: 100%;
+  max-width: 100%;
+  height: 4.6rem;
+  z-index: 1000;
+}
+h5 {
+  position: relative;
+  left: 2rem;
+  top: 0.9rem;
+  color: rgb(68, 66, 66);
+  font-weight: 400;
+  font-size: 2.5rem;
+}
+
+a.button {
+  display: inline-block;
+  position: relative;
+  left: 12rem;
+  bottom: 1.5rem;
+  padding: 0.6rem 1rem;
+  margin-left: 0.2rem;
+  color:black;  
+  font-size: 1rem;             
+  text-decoration: none;
+  border-radius: 0.3rem;
+  transition: background-color 0.6s ease;
+  cursor: pointer;
+  font-family: Arial, sans-serif;
+ 
+}
+a.button:hover {
+  background-color: #1d4451;
+  color: white;
+}
+ /* icon-part */
+.icon-wrapper {
+  position: relative;
+  display: inline-block;
+  margin-right: 0.9rem;
+  left: 73rem;
+  bottom: 3.5rem;
+  font-size: 1.5rem;
+  color: #333;
+  cursor: pointer;
+}
+.notification {
+  position: absolute;
+  bottom: 1rem;
+  left:1rem ;
+  background-color: rgb(62, 61, 70);
+  color: white;
+  font-size: 0.8rem;
+  width: 1.1rem;
+  height: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}
+/* background-green-image */
+.bg-img {
+  position: relative;
+  top: 4.6rem;
+  background-size: cover;
+  background-position: center;
+  height: 30rem;
+  width: 84.5rem;
+  max-width: 100%;
+  overflow-x: hidden;
+} 
+.girl-img {
+  position: absolute;
+  top: 6.6rem;
+  left: 37rem;
+  width: 40rem; 
+  height: 28rem;
+  z-index: 10; 
+}
+/* frame */
+.frame {
+  position: absolute;
+  top: 4.2rem;
+  left:37rem;
+  width: 43.5rem;
+  height: 31.5rem; 
+  z-index: 0; 
+  rotate: -15deg;
+}
+/* apex and other logo*/
+.apex-other-logo {
+  position: relative;
+  left: 3rem;
+  bottom: 2rem;
+}
+.apex-logo {
+  position: relative;
+  height: 1.7rem;
+  width: 4rem;
+  bottom: 21rem;
+  left: 3.6rem;
+}
+/* apex-text-presents */
+.apex-text-presents {
+  position: relative;
+  font-family: "Roboto", sans-serif;
+  bottom: 21rem;
+  left: 3.4rem;
+  font-size: 1rem;
+  color: white; 
+}
+/* dwf-logo */
+.d-font{
+  position: relative;
+  bottom: 21rem;
+  left: 3.2rem;
+  color: white;
+  font-size: 8rem;
+  font-family: "Playfair Display", serif;
+ }
+.f-font {
+  position: relative;
+  bottom: 34rem;
+  left: 6.6rem;
+  color: white;
+  font-size: 14.5rem;
+  font-family: "Libre Baskerville", serif;
+  /* font-family: "Share Tech", sans-serif; */
+}
+.w-font {
+  position: relative;
+  bottom: 49.4rem;
+  left: 11.5rem;
+  color:white;
+  font-size: 10rem;
+  font-family: "DM Serif Display", serif; 
+}
+.daraz-2021w {
+  position: relative;
+  bottom: 51rem;
+  left: 12.5rem;
+  color: white;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.8rem;
+  font-weight: 300;
+  line-height: 0.9;
+}
+.dot-daraz {
+  position: relative;
+  bottom: 52rem;
+  left: 16.6rem;
+  color: #ffffff;
+  background-color:  rgb(214, 155, 26);
+  border-radius: 1rem;
+  height: 0.6rem;
+  width: 0.6rem;
+}
+/* date-formula type */
+.chemistry-formula  {
+  position: relative;
+  display: flex;
+  font-size: 3rem;
+  color: rgb(214, 155, 26);
+  bottom: 51rem;
+  left: 4rem;
+  font-family: "Roboto", sans-serif;
+}
+/* sub */
+.sub {
+  animation: lights 5s 750ms linear infinite;
+}
+/* 7-13 th */
+.th {
+  position: relative;
+  font-size: 0.9rem;
+  bottom: 0.4rem;
+}
+/* october-text-october */
+.chemistry-text {
+  display: flex;
+  padding-top: 0.5rem;
+  padding-left: 0.7rem;
+  font-size: 1.5rem;
+  color:rgb(221, 221, 221);
+  left: 0.1rem;
+}
+/* animation */
+@import url(https://fonts.googleapis.com/css?family=Anonymous+Pro);
+/* Cursor */
+.cursor {
+  width: 1rem;
+  height: 2.5rem;
+  border-right: 2px solid;
+  white-space: nowrap;
+  overflow: hidden;
+  transform: translateY(-10%);    
+}
+/* Animation */
+.typewriter-animation {
+ animation: 
+  typewriter 5s steps(50) 1s 1 normal both, 
+  blinkingCursor 500ms steps(1) infinite normal;
+}
+@keyframes typewriter {
+  from { width: 0; }
+  to { width: 20%; }
+}
+@keyframes blinkingCursor{
+  from { border-right-color: #1d4451; }
+  to { border-right-color: transparent; }
+}
+/* media-text-ice-today-box */
+.media-text-ice-today-box {
+  position: relative;
+  bottom: 50rem;
+  left: 4rem; 
+}
+.media-partner {
+  padding-left: 1.5rem;
+  color: white;
+  font-size: 1.3rem;
+  font-weight: 300;
+  font-family: "Roboto", sans-serif;
+}
+.ice-today {
+  width: 11rem;
+  height: 3rem;
+  text-align: center;
+  padding-top: 0.6rem;
+  background-color: rgb(221, 221, 221);
+  font-family: "Playfair Display", serif;
+  font-size: 1.8rem;
+  border-radius: 0.2rem;
+}
+/* brand-partner */
+.brand-partner-box {
+ position: relative;
+ bottom: 54.6rem;
+ padding-left: 17rem;
+}
+.brand-partner {
+  padding-left: 3rem;
+  color: rgb(248, 242, 242);
+  font-size: 1.3rem;
+  font-weight: 300;
+  font-family: "Roboto", sans-serif;
+}
+/* brand-logs  */
+.brand-logs {
+  width: 16rem;
+  height: 3rem;
+  background-color: rgb(221, 221, 221);
+  border-radius: 0.2rem;
+}
+.logo-set {
+  display: inline-flex;
+  align-items: center;
+  margin-bottom: -1rem;
+  margin-left: 1rem;
+  justify-content: flex-start;
+  height:2.1rem;
+  width: 2.5rem;
+}
+
+/* main */
+.services {
+  position: relative;
+  bottom: 49rem;
+  padding-left: 1rem;
+  display: flex;
+  font-family: "Roboto", sans-serif;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+.service-box {
+  display: flex;
+  align-items: center;
+  max-width: 90rem;
+  gap: 1rem;
+}
+.service-text h4 {
+  font-size: 19px;
+  font-weight: 750;
+  margin-bottom: 0.2rem;
+}
+#service-box-paragraph-text{
+  position: relative;
+  font-size: 1.1rem;
+}
+.service-text p {
+  font-size: 13px;
+  color: #555;
+}
+.bold-text-service-box {
+  position: relative;
+  font-weight: bold;
+}
+.service-icon-set {
+  height: 2.5rem;
+  width: 2.5rem;
+}
+.delivery-icon {
+  padding-bottom: 0.4rem;
+  height: 4rem;
+  width: 3rem;
+}
+/* Product-Category */
+#product-category{
+ position: relative;
+ bottom: 39rem;
+ padding-right: 6rem;
+}
+.product-categories-header-text {
+  margin-bottom: 31rem;
+  padding-left: 1rem;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.8rem;
+  letter-spacing: 0.5px;
+  font-weight: 400;
+}
+.categories {
+  position: relative;
+  font-family: "Roboto", sans-serif;
+  right: 8rem;
+  bottom: 28rem;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 3 box per row */
+  gap: 10px;
+  max-width: 900px;
+  margin: 0 auto; 
+}
+#category-box {
+  border: 1px solid #ddd;
+  padding:6px 12px;
+  line-height:1.1;
+  width: 19rem;
+  height: 3rem;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  justify-content: flex-start;
+  background: #fff;
+  transition: 0.3s ease;
+  cursor: pointer;
+}
+.category-box {
+  display: flex;
+  position: absolute;
+  margin-left: 13.7rem;
+  height: 2.5rem;
+  width: 3.2rem;
+}
+#category-box:hover {
+  box-shadow: 4px 5px 16px rgba(12, 47, 58, 0.87);
+}  
+.category-name {
+  font-size: 1.2rem;
+}
+/* highlights-products */
+.highlight-button-product-box {
+  position: relative;
+  bottom: 36rem;
+}
+.highlights-product-header{
+  position: relative;
+  font-size:1.8rem;
+  letter-spacing: 0.5px;
+  font-weight: 400;
+  font-family: "Roboto", sans-serif;
+  padding-left: 30rem;
+  bottom: 23rem;
+}
+.btn-set {
+  display:inline-flex;           
+  gap:12px;   
+  padding-left: 4rem;                   
+}
+.filter-btn {
+  position: relative;
+  bottom: 21rem;
+  left: 18rem;
+  min-width:12.5rem;     
+  height: 2.9rem;
+  text-align: center;         
+  border-radius:0.2rem;
+  font-size:1rem;
+  font-weight:700;
+  letter-spacing:.0.5rem;
+  text-transform:uppercase;
+  font-family: "Roboto", sans-serif;
+  border:none;
+  color:#fff;
+  cursor:pointer;
+  transition:.25s;
+}
+.best {
+  background:#102e37
+}          
+.rated {
+  background:#102e37
+}       
+.arrival {
+  background:#102e37
+}      
+.filter-btn:hover {
+  background:#d8d6d6 !important; 
+  color:#102e37;   
+}    
+/* highlights-products-boxes */
+.products {
+  position: relative;
+  bottom: 17rem;
+  display:grid;
+  grid-template-columns:repeat(4, 1fr); /* ⬅️ 4 boxes left-to-right  */
+  gap:2rem;                              /* space between cards      */
+  width:max-content;     
+  height: 40rem;                 
+  margin:auto;          
+  font-family: "Roboto", sans-serif;                 
+}
+.card {
+  width:18rem;            
+  height:27rem;           
+  background:#fff;
+  border-radius:0.5rem;
+  display:flex;
+  flex-direction:column;
+  overflow:hidden;
+  transition: 0.3s ease;
+  cursor: pointer;
+  box-shadow: 2px 3px 13px rgba(77, 75, 76, 0.329);
+}
+.card:hover {
+  box-shadow: 5px 6px 17px #0f2e38;
+}
+.card img {
+  position: relative;
+  bottom: 0.1rem;
+  width:100%;
+  height:17.5rem;            
+}
+.details {
+  padding:14px 14px 18px;
+}
+.name {
+  font-size:1.2rem;
+  font-weight:600;
+  margin:4px 0 6px;
+}
+.price {
+  font-size:1rem;
+  padding-top: 0.4rem;
+}
+.price .old {
+  color:#888;
+  text-decoration:line-through;
+  font-size:1rem;
+  margin-left:0.4rem;
+}
+.stars {
+  padding-top: 0.3rem;
+  color:#d56d6a;
+  font-size:1.5rem;
+  letter-spacing:2px;
+}
+.black-star {  
+  color: gray;
+}
+/* vendor-section */
+.vendor-section {
+  position: relative;
+  bottom: 28rem;
+  padding-left: 4rem;
+  max-width:80rem; 
+  font-size: 2rem;
+  letter-spacing: 0.5px;
+  font-family: "Roboto", sans-serif;
+  /* left: 2.5rem;        */
+  text-align:center;
+}
+/* --- HEADING --- */
+.vendor-section h2 {
+  font-size:1.8rem;
+  font-weight: 400;
+  letter-spacing:1px;
+  margin-bottom:32px;
+}
+/* --- FLEX ROW that holds the 4 boxes --- */
+.vendor-row {
+  display:flex;
+  border:1px solid #e2e2e2;   
+  border-radius: 0.2rem;  
+}
+/* --- INDIVIDUAL BOX --- */
+.vendor {
+  flex:1; 
+  border-right:1px solid #e2e2e2; 
+  transition:box-shadow .25s ease; 
+}
+.vendor-row:hover {
+  border:white;
+  border-right:none
+}
+.vendor:hover {
+  border-radius: 0.5rem;
+  box-shadow: 5px 5px #0f2e388e, 10px 10px #0f2e3888, 15px 15px #0f2e384b, 20px 20px #0f2e3818, 25px 25px #0f2e3804;
+}
+.vendor:last-child {
+  border-right:none;
+}  
+/* icon */
+.vendor img {
+  padding-right: 6rem;
+  width:10rem;
+  height:4.9rem;
+  object-fit:contain;
+  margin-bottom:14px;
+}
+/* label */
+.vendor span {
+  position: relative;
+  right: 10.5rem;
+  font-size:1rem;
+  font-weight:500;
+  text-align: left;
+}
+/* review */
+.review-container {
+  position: relative;
+  bottom: 18rem;
+  text-align: center;
+  padding-left: 4.5rem;
+}
+.review-box {
+  position: relative;
+  background: #e4e6e7;
+  padding: 30px 30px;
+  border-radius: 8px;
+  width: 76rem;
+  height: 18rem;
+}
+.review-box img {
+  position: relative;
+  bottom: 1rem;
+  width: 9rem;
+  height: 9rem;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+.review-name {
+  position: relative;
+  bottom: 0.5rem;
+  font-family: "Roboto", sans-serif;
+  font-weight: 480;
+  font-size: 1.5rem;
+  /* margin-bottom: 10px; */
+}
+.stars-review {
+  position: relative;
+  bottom: 0.9rem;
+  color: red;
+  /* margin-bottom: 10px; */
+  font-size: 1.5rem;
+}
+.review-text {
+  position: relative;
+  bottom: 0.7rem;
+  color: #555;
+  font-size: 1.2rem;
+  font-family: "Roboto", sans-serif;
+}
+.title {
+  display: inline-flex;
+  margin-bottom: 0.8rem;
+  font-size: 1.6rem;
+  font-weight: 450;
+  font-family: "Roboto", sans-serif;
+    
+}
+/* footer */
+ .footer {
+  position: relative;
+  height: 18rem;
+  background-color: #131c2b;
+  color: #ffffff;
+  padding: 40px 50px;
+}
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  font-family: "Roboto", sans-serif;
+  flex-wrap: wrap;
+}
+.footer-column {
+  flex: 1;
+}
+.footer-column h4 {
+  margin-bottom: 12px;
+  font-size: 1.2rem;
+}
+.footer-column a {
+  display: block;
+  color: #d1d1d1;
+  text-decoration: none;
+  margin-bottom: 4px;
+  font-size: 1.2rem;
+}
+.footer-column a:hover {
+  color: #ffffff;
+}
+.subscribe-text {
+  color: #d1d1d1;
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+}
+.subscribe-box input[type="email"] {
+  padding: 9.1px;
+  border: none;
+  border-radius: 3px;
+  margin-bottom: 1rem;
+}
+.subscribe-box button {
+  background-color: #1d144e;
+  font-size: 0.9rem;
+  color: white;
+  padding: 15px 18px;
+  border: none;
+  cursor: pointer;
+  border-radius: 3px;
+}
+.subscribe-box button:hover {
+  background-color: #732dce;
+}
